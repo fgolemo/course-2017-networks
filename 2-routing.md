@@ -31,9 +31,9 @@ Here is the network configuration for this exercise:
 
 - **(A)** Configure the network interfaces of the different machines according to the diagram above. Use the ifconfig command. Be careful not to confuse `eth0` and `eth1`! Check with 'ping' that each pair of machines can communicate.
 - **(B)** Display the routing tables with the `route -n` command. Describe what you see.
-- **(C)** Configure the routing tables of the different machines using the `route` command. Below are some syntax examples. Check with `ping` that all machines are able to communicate with each other.
-- **(D)** Ping between *opeth* and *grave*. Run `tcpdump -i any` on *immortal* to see the traffic. What do you notice?
-
+- **(C)** What's the difference between the two multi-network routing methods described in http://www.thegeekstuff.com/2012/04/route-examples/ and http://www.techrepublic.com/article/understand-the-basics-of-linux-routing/
+- **(D)** Configure the routing tables of the different machines using the `route` command. Below are some syntax examples. Check with `ping` that all machines are able to communicate with each other.
+- **(E)** Ping between *opeth* and *grave*. Run `tcpdump -i any` on *immortal* to see the traffic. What do you notice?
 
 ## Advanced Routing
 
