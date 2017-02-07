@@ -8,7 +8,6 @@ Then start the emulator with this command:
 
 You have the following network, IP addresses and routing tables are already configured.
 
-#TODO: reconfigure network to new IPs (and new routes)
 
                grave
                  | .2
