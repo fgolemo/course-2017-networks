@@ -25,7 +25,7 @@ You have the following network, IP addresses and routing tables are already conf
 - **(A)** Using the `nmap` command on *immortal* (with options), try to discover the computers in the 192.168.200.0/24 network that are online. Again, on *immortal* try to discover the network services available on a remote machine, for example *opeth*. Show me the nmap output for that and explain what you see.
 - **(B)** On *opeth*, use the `traceroute` command to discover the way to *grave*. How does this program work?
 - **(C)** By using the `netcat` command on the `grave` machine as a server, and `opeth` as a client, establish a TCP/IP connection. Run the command `tcpdump -n -A -i any` on `immortal` beforehand and observe the frames exchanged when establishing the connection (SYN / SYN-ACK / ACK). Show me the output of tcpdump and netcat, and explain what you see.
-- **(D)** Using the command `netstat` with options, display the state of TCP connections (LISTEN, ESTABLISHED) on the `grave` machine. Do this again when netcat is started. What do you notice?
+- **(D)** (SKIP THIS QUESTION FOR NOW. DO NOT ANSWER THIS QUESTION BECAUSE ON THE EMULATED MACHINES THERE IS A PROBLEM WITH NETSTAT) Using the command `netstat` with options, display the state of TCP connections (LISTEN, ESTABLISHED) on the `grave` machine. Do this again when netcat is started. What do you notice?
 
 **HINT** to get the documentation of these tools, type into the shell `man nmap` or `man tcpdump`,...  Just `man [command]` and hit `ENTER`.
 
@@ -44,7 +44,7 @@ On `immortal`, run the following command to capture all network traffic:
 
 Now login to `grave` and from there connect to `syl`:
 
-    Root@serious# telnet 192.168.0.3 -l toto
+    Root@serious# telnet 192.168.200.3 -l toto
     Toto@syl$ logout
     Root@serious#
 
