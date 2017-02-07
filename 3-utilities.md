@@ -68,3 +68,6 @@ The ARP spoofing attack is a simple attack that targets Ethernet local area netw
 
 - **(I)** What is the principle idea of an ARP spoofing attack?
 - **(J)** Set up this attack using the `arpspoof` command (only installed on `immortal`), so that immortal intercepts traffic between `syl` and `opeth`. Using the `tcpdump` command, highlight the operation of this attack.
+
+For an introduction to the arpspoof command and how to use it, check out this website:
+https://pdworks.wordpress.com/2009/03/29/arpspoof-for-dummies-a-howto-guide/
