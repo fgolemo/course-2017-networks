@@ -25,6 +25,7 @@ http://www.secdev.org/projects/scapy/demo.html
 or a bit more modern
 
 http://www.secdev.org/projects/scapy/doc/index.html
+
 http://www.secdev.org/projects/scapy/doc/usage.html
 
 On `opeth`, run the `scapy` command. The prompt `>>>` indicates that you are now in the Scapy interpreter. To quit Scapy, hit <kbd>ctrl</kbd>+<kbd>d</kbd>.
@@ -76,3 +77,35 @@ Tip: To write a Python loop ...
 
 
 Attention : Do not forget to add one or two spaces after '...' in the body of the loop (after the line `for` and before the `print` function).
+
+
+## BONUS: Syn Scan
+
+Load up the configuration from the first exercise (above):
+
+    /net/ens/qemunet/qemunet.sh -x -s ~/gw3.tgz
+
+- **(G)** What is a syn scan? What is the `nmap` command used for?
+
+From opeth, run the command `nmap -sS -n @syl` to scan the ports of `syl`.
+Now start Scapy on `opeth`.
+To make a syn scan with Scapy, try to establish a TCP/IP connection to all ports (1 to 65535) of `syl`. If a service is available on a port on the target machine, then the server accepts the connection request by responding favorably.
+
+To do a Scapy test, create a TCP/IP packet to port 80 of `syl` with the TCP flags field equal to `S` (SYN). Send this package and observe the answer.
+
+    a = IP(???)/TCP(???) # instead of ??? you have to fill in your code
+    b = sr1 (a)
+
+Tip: Above I gave you a few links, look at the demo.html and usage.html links for finding the answer to this.
+
+- **(H)** What is the TCP flag in the response you are getting?
+- **(I)** Repeat for port 3333. What do you notice? Deduce a way to detect an open or closed port.
+- **(J)** Complete the following program, to discover the ports of machine `nile` (from 1 to 1024) that are open and to display them like `nmap`.
+
+
+    for p in range (1024):
+    ...   if ???:
+    ...     print  "OPEN" , p
+    ...       
+
+Warning : The test ??? Is not so obvious to find! Google is your friend :)
