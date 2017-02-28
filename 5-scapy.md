@@ -43,7 +43,7 @@ To ping `syl`, an `echo-request` must be sent via the ICMP protocol over IP. Typ
     pong = sr1( ping ) # if you can't read this properly, the command is sr one, not sr L
 
 - **(A)** What are the ping and pong variables - what do they do? What is the sr1() function good for?
-- **(B)** Use the `show()` method of both `ping` and `pong` to display the contents of the packages. Note the encapsulation of ICMP in IP. Show me the output of the `show()` method for both variables and comment on each line what you think it means.
+- **(B)** Use the `show()` method of both `ping` and `pong` to display the contents of the packages. Note the encapsulation of ICMP in IP. Show me the output of the `show()` method for both variables and comment on each line what you think it means. (Or at least at the important lines, like `version`, `ttl`, `src`, `dst`, `type`)
 - **(C)** Now, do a ping towards `grave` in the same way and show me the output of the `pong.show()`
 
 ## Traceroute
