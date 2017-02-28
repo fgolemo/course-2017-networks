@@ -2,7 +2,7 @@
 
 Start the emulator with this command:
 
-/net/ens/qemunet/qemunet.sh -x -s /net/ens/qemunet/demo/dmz.tgz
+    /net/ens/qemunet/qemunet.sh -x -s /net/ens/qemunet/demo/dmz.tgz
 
 Here is the network configuration.
 
