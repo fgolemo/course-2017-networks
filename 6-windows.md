@@ -2,7 +2,7 @@
 
 Start the emulator with this command:
 
-    /net/ens/qemunet/qemunet.sh -s /net/ens/qemunet/demo/win.tgz
+    /net/ens/qemunet/qemunet.sh -x -s /net/ens/qemunet/demo/win.tgz -c /net/ens/qemunet/qemunet-win.cfg
 
 This is the topology of the network you just started:
 
