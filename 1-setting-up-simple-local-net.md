@@ -4,7 +4,7 @@ Fire up the network simulator based on a saved session for this first exercise:
 
 (assuming you are still in the qemunet/trunk directory)
 
-    ./qemunet.sh -s ~/course-2017-networks/lan0.tgz
+    ./qemunet.sh -s ~/course-2018-networks/lan0.tgz
 
 Here is the network configuration used for TP1, a local area network (LAN) interconnected via the Ethernet switch s1.
 
